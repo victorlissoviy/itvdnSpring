@@ -1,0 +1,25 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+group = 'org.itvdn'
+version = '1.0'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation("org.springframework:spring-context:6.0.11")
+	testImplementation platform('org.junit:junit-bom:5.9.1')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+application {
+	mainClass = 'org.itvdn.main.Main'
+}

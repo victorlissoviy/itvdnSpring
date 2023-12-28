@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'itvdnSpring'
+include 'hw1'
+
